@@ -1,11 +1,13 @@
 const React = require("react");
-const { BrowserRouter } = require("react-router-dom");
+const { BrowserRouter, Route } = require("react-router-dom");
 const StandardLayout = require("../common/containers/StandardLayout");
+const ActionTrigger = require("./test/ActionTrigger");
 
 const AppMain = () => (
   <BrowserRouter>
     <StandardLayout>
-      <h1>:-)</h1>
+      <Route path="/" exact render={() => <h1>:-)</h1>} />
+      <Route path="/test/action" component={ActionTrigger} />
     </StandardLayout>
   </BrowserRouter>
 );

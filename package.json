@@ -75,6 +75,7 @@
     "react": "^15.3.2",
     "react-addons-css-transition-group": "^15.4.1",
     "react-dom": "^15.3.2",
+    "react-json-tree": "^0.10.9",
     "react-redux": "^5.0.1",
     "react-router": "^4.0.0",
     "react-router-dom": "^4.0.0",

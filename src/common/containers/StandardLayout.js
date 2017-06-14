@@ -33,7 +33,7 @@ class StandardLayout extends React.Component {
           </div>
         </Panel>
         <Snackbar
-          active={showError}
+          active={!!showError}
           action={getMessage('label.dismiss')}
           label={error && error.message}
           onClick={handleErrorDismiss}
