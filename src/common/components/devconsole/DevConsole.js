@@ -26,7 +26,9 @@ const LogLine = props => {
     if (typeof arg === "string") {
       arg.split("%c").forEach(colorLogs);
     } else {
-      logs.push(<JSONTree key={key++} theme="mocha" data={arg} />);
+      logs.push(
+        <JSONTree key={key++} theme="mocha" data={arg} hideRoot={true} />
+      );
     }
     arg = args.shift();
   }

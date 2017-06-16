@@ -40,6 +40,7 @@
     "jest": "15.1.1",
     "json-loader": "0.5.4",
     "node-sass": "^4.1.0",
+    "nodemon": "^1.11.0",
     "object-assign": "4.1.0",
     "opn": "4.0.2",
     "path-exists": "3.0.0",
@@ -91,7 +92,7 @@
     "verror": "^1.9.0"
   },
   "scripts": {
-    "dev": "node scripts/dev.js",
+    "dev": "nodemon --ignore dist --ignore src scripts/dev.js",
     "start": "node --abort-on-uncaught-exception scripts/start.js",
     "build": "node scripts/build.js",
     "test": "jest --env=jsdom",

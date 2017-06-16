@@ -79,8 +79,9 @@ function watchAppServer(protocol) {
 
     checkPortAndRun(APP_SERVER_PORT, function(port) {
       runAppServer(port, function() {
+        const now = new Date().getTime();
         console.log(
-          `>>STATUS_READY<< {"devServerUrl": "${protocol}://localhost:${port}/"}\n`
+          `>>STATUS_READY<< {"devServerUrl": "${protocol}://localhost:${port}/","devServerStartTime": ${now}}\n`
         );
         openBrowser(port, protocol);
       });
